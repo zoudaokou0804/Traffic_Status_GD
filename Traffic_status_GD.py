@@ -47,7 +47,7 @@ def get_traffic_status():
     bf=BeautifulSoup(html)
     load_url=bf.a['href']
     file_name=load_url.split('/')[-1]
-    local_path='C:/Users/user/Desktop/高德交通态势爬取/'+file_name
+    local_path='C:/Users/a6540/Desktop/Traffic_Status_GD/'+file_name
     urlretrieve(load_url,local_path)
 if __name__ == "__main__":
     get_traffic_status()
